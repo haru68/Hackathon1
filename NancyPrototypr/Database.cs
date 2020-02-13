@@ -57,7 +57,7 @@ namespace EcoConception
         {
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = Connection;
-            cmd.CommandText = "SELECT * FROM Products";
+            cmd.CommandText = "SELECT [id], [price], [name], [description], [isFemale], [hasTeeth], [age], [hasOxygenBottle], [isIncontinent], [isHandicaped], [category], [photo] FROM Products";
             List<Product> products = new List<Product>();
             using (SqlDataReader reader = cmd.ExecuteReader())
             {
@@ -88,7 +88,7 @@ namespace EcoConception
         {
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = Connection;
-            cmd.CommandText = $"SELECT * FROM Categories";
+            cmd.CommandText = $"SELECT [id], [name], [description] FROM Categories";
             List<Category> categories = new List<Category>();
             using (SqlDataReader reader = cmd.ExecuteReader())
             {
@@ -107,6 +107,54 @@ namespace EcoConception
             return categories;
         }
 
+        public List<Product> GetProductsOfCat1()
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = Connection;
+            cmd.CommandText = "SELECT [price], [name], [description], [photo] FROM Products WHERE [category]=1";
+            List<Product> products = new List<Product>();
+            using (SqlDataReader reader = cmd.ExecuteReader())
+            {
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        Product product = new Product();
+                        product.Price = reader.GetDecimal(reader.GetOrdinal("price"));
+                        product.Name = reader.GetString(reader.GetOrdinal("name"));
+                        product.Description = reader.GetString(reader.GetOrdinal("description"));
 
+                        products.Add(product);
+                    }
+                }
+            }
+            return products;
+
+        }
+
+        public List<Product> GetProductsOfCat2()
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = Connection;
+            cmd.CommandText = "SELECT [price], [name], [description], [photo] FROM Products WHERE [category]=2";
+            List<Product> products = new List<Product>();
+            using (SqlDataReader reader = cmd.ExecuteReader())
+            {
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        Product product = new Product();
+                        product.Price = reader.GetDecimal(reader.GetOrdinal("price"));
+                        product.Name = reader.GetString(reader.GetOrdinal("name"));
+                        product.Description = reader.GetString(reader.GetOrdinal("description"));
+
+                        products.Add(product);
+                    }
+                }
+            }
+            return products;
+
+        }
     }
 }

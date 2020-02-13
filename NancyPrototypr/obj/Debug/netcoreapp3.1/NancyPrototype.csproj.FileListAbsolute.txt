@@ -34,3 +34,38 @@ C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyProtot
 C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\EcoConception.exe
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\EcoConception.deps.json
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\EcoConception.runtimeconfig.json
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\EcoConception.runtimeconfig.dev.json
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\EcoConception.dll
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\EcoConception.pdb
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\Nancy.dll
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\Nancy.Hosting.Self.dll
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\obj\Debug\netcoreapp3.1\NancyPrototype.csprojAssemblyReference.cache
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\obj\Debug\netcoreapp3.1\NancyPrototype.AssemblyInfoInputs.cache
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\obj\Debug\netcoreapp3.1\NancyPrototype.AssemblyInfo.cs
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\obj\Debug\netcoreapp3.1\NancyPrototype.csproj.CopyComplete
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\obj\Debug\netcoreapp3.1\EcoConception.dll
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\obj\Debug\netcoreapp3.1\EcoConception.pdb
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Student\Hackathon 1\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

@@ -60,6 +60,7 @@ namespace EcoConception
         {
             Get("/", ServeHome);
             Get("/Categories", ServeCategories);
+            Get("/tri", ServeCategory1);
         }
 
         private dynamic ServeHome(object manyParameters)
@@ -70,6 +71,11 @@ namespace EcoConception
         private dynamic ServeCategories(object manyParameters)
         {
             return View["home.sshtml", Categories];
+        }
+
+        private dynamic ServeCategory1(object manyParameters)
+        {
+            return View["home.sshtml", Database.GetProductsOfCat1()];
         }
     }
 }

@@ -1,7 +1,7 @@
 USE Hackathon1;
 
-DROP TABLE Categories;
 DROP TABLE Products;
+DROP TABLE Categories;
 
 CREATE TABLE Categories (
 id INT PRIMARY KEY IDENTITY(1,1),
@@ -23,14 +23,6 @@ category INT,
 photo VARBINARY,
 FOREIGN KEY (category) REFERENCES Categories(id)
 );
-
-INSERT INTO Products (price, "name", "description", isFemale, hasTeeth, age, hasOxygenBottle, isIncontinent, isHandicaped, category)
-VALUES 
-(300, 'Gérard', 'Happy lucky guy', 0, 1, 91, 1, 0, 0, 'man'),
-(400, 'Henriette', 'Cooking grandma', 1, 1, 95, 0, 0, 1, 'woman');
-
-SELECT * FROM Products;
-SELECT * FROM Categories;
 
 INSERT INTO Products (isFemale, "Name", Age, "Description", Price, hasTeeth, hasOxygenBottle, isIncontinent, isHandicaped)
 VALUES
@@ -57,13 +49,11 @@ VALUES
 
 INSERT INTO Categories ("name", "description") 
 VALUES
-('Over90', 'People of age higher than 90 years old'),
-('Lower90', 'People of age lower than 90 years old'),
-('Love smoking', 'People who loves smoking'),
-('Sexually active', 'No need to say more');
+('Over80', 'People of age higher than 80 years old'),
+('Lower80', 'People of age lower than 80 years old');
 
-UPDATE Products SET category = 4 WHERE id<21;
-UPDATE Products SET category = 3 WHERE id<15;
-UPDATE Products SET category = 2 WHERE id<10;
-UPDATE Products SET category = 1 WHERE id<5;
+
+UPDATE Products SET category = 1 WHERE age>=80;
+UPDATE Products SET category = 2 WHERE age<80;
+
 
