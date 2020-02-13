@@ -5,6 +5,8 @@ using System.IO;
 using Nancy;
 using Nancy.ModelBinding;
 using System.Linq;
+using System.Data.SqlClient;
+
 
 namespace EcoConception
 {
@@ -19,34 +21,55 @@ namespace EcoConception
                 // here to show you how to pass a model
                 // to your view
                 // Database.GetMostRecentProducts();
-                List<Product> products = new List<Product>();
+                /*List<Product> products = new List<Product>();
                 IEnumerable<Category> categories = Categories;
-                Category badassCategory = Categories.Single(category => category.Name == "Bada$$");
-                products.Add(new Product { Name = "Corentin", Price = 40000, Category = badassCategory, Description = "SuperDev" });
-                return products;
+                Category womanCategory = Categories.Single(category => category.Name == "Women");
+                Category manCategory = Categories.Single(category => category.Name == "Men");
+                products.Add(new Product { Name = "Henriette", Price = 40000, Category = womanCategory, Description = "Old woman" });
+                products.Add(new Product { Name = "Gérard", Price = 30000, Category = manCategory, Description = "Old handsome boy" });
+                */
+
+                return Database.GetAllProducts();
             }
         }
 
-        public override IEnumerable<Category> Categories 
-        { 
+
+
+        /*public override IEnumerable<Category> Categories
+        {
             get
             {
                 List<Category> categories = new List<Category>
                 {
-                    new Category{ Name = "Bada$$", Description = "Really good stuff" }
+                    new Category{ Name = "Women", Description = "Old mature and pretty women" },
+                    new Category{ Name = "Men", Description = "Good guys like your daddy" }
                 };
                 return categories;
+            }
+        }*/
+
+        public override IEnumerable<Category> Categories
+        {
+            get
+            {
+                return Database.GetAllCategories();
             }
         }
 
         public HomeModule()
         {
             Get("/", ServeHome);
+            Get("/Categories", ServeCategories);
         }
 
         private dynamic ServeHome(object manyParameters)
         {
             return View["home.sshtml", Products];
+        }
+
+        private dynamic ServeCategories(object manyParameters)
+        {
+            return View["home.sshtml", Categories];
         }
     }
 }
