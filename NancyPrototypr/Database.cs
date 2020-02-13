@@ -84,6 +84,8 @@ namespace EcoConception
 
         }
 
+
+
         public List<Category> GetAllCategories()
         {
             SqlCommand cmd = new SqlCommand();
@@ -107,6 +109,53 @@ namespace EcoConception
             return categories;
         }
 
+        
+
+        public int GetCategoryId(string category)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = Connection;
+            cmd.CommandText = $"SELECT id FROM Categories WHERE \"name\" = '{category}'";
+            int id = 1;
+            using (SqlDataReader reader = cmd.ExecuteReader())
+            {
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        id = reader.GetInt32(reader.GetOrdinal("id"));
+                    }
+                }
+            }
+            return id;
+        }
+
+
+
+        public List<Product> GetProductByCategory(int category_id)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = Connection;
+            cmd.CommandText = $"SELECT \"name\", id, price, \"description\" FROM Products WHERE category = {category_id}";
+            List<Product> products = new List<Product>();
+            using (SqlDataReader reader = cmd.ExecuteReader())
+            {
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        Product product = new Product();
+                        product.Price = reader.GetDecimal(reader.GetOrdinal("price"));
+                        product.Name = reader.GetString(reader.GetOrdinal("name"));
+                        product.Description = reader.GetString(reader.GetOrdinal("description"));
+                        product.Id = reader.GetInt32(reader.GetOrdinal("id"));
+                        products.Add(product);
+                    }
+                }
+            }
+            return products;
+
+        }
 
     }
 }

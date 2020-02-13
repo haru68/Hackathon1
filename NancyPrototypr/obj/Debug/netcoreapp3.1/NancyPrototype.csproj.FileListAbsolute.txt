@@ -22,7 +22,6 @@ C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyProtot
 C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\obj\Debug\netcoreapp3.1\NancyPrototype.csproj.CopyComplete
 C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\obj\Debug\netcoreapp3.1\EcoConception.dll
 C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\obj\Debug\netcoreapp3.1\EcoConception.pdb
-C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\bin\Debug\netcoreapp3.1\EcoConception.dll.config
 C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
 C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll

@@ -56,10 +56,16 @@ namespace EcoConception
             }
         }
 
+        public IEnumerable<Product> ProductFromCategory(string categoryName)
+        {
+            return Database.GetProductByCategory(Database.GetCategoryId(categoryName));
+        }
+
         public HomeModule()
         {
             Get("/", ServeHome);
             Get("/Categories", ServeCategories);
+            Get("/tri", ServeProductFromCategory);
         }
 
         private dynamic ServeHome(object manyParameters)
@@ -70,6 +76,11 @@ namespace EcoConception
         private dynamic ServeCategories(object manyParameters)
         {
             return View["home.sshtml", Categories];
+        }
+
+        private dynamic ServeProductFromCategory(object manyParameters)
+        {
+            return View["home.sshtml", ProductFromCategory("Sexually active")];
         }
     }
 }
