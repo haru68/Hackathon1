@@ -14,12 +14,14 @@ namespace EcoConception
 
         public AbstractModule()
         {
-            /*SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.InitialCatalog = "BDD";
-            builder.DataSource = "InstanceAddress";
-            builder.UserID = "UserOfTheDatabase";
+
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            //builder.InitialCatalog = "BDD";
+            // builder.DataSource = "InstanceAddress";
+            // builder.UserID = "UserOfTheDatabase";
+            builder.ConnectionString = @"Data Source=PC-HARU\SQLEXPRESS;Initial Catalog=Hackathon1;Integrated Security=True";
             Database = new Database(builder);
-            Database.OpenConnection();*/
+            Database.OpenConnection();
         }
     }
 }

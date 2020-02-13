@@ -12,10 +12,10 @@ namespace EcoConception
             {
                 UrlReservations = new UrlReservations() { CreateAutomatically = true },
             };
-            using (var host = new NancyHost(hostConfiguration, new Uri("http://localhost:8888")))
+            using (var host = new NancyHost(hostConfiguration, new Uri("http://localhost:1234")))
             {   
                 host.Start();
-                Console.WriteLine("Running on http://localhost:8888");
+                Console.WriteLine("Running on http://localhost:1234");
                 Console.ReadLine();
                 host.Stop();
             }

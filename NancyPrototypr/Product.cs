@@ -6,12 +6,18 @@ namespace EcoConception
 {
     public class Product
     {
-        public int Id { get; private set; }
-        public Single Price { get; set; }
+        public int Id { get; set; }
+        public Decimal Price { get; set; }
         public String Name { get; set; }
         public String Description { get; set; }
+        public bool isFemale { get; set; }
+        public bool hasTeeth { get; set; }
+        public int age { get; set; }
+        public bool hasOxygenBottle { get; set; }
+        public bool isIncontinent { get; set; }
+        public bool isHandicaped { get; set; }
         public Category Category { get; set; }
 
-        public bool PriceIsBig { get => true; }
+
     }
 }
