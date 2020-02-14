@@ -1,6 +1,4 @@
-
-
-  body{
+body{
     background-color: black;
     font-family:Arial, sans-serif;
     margin: 0;
@@ -30,11 +28,10 @@
   .header-nav a{
     float: right;
     padding: 30px 60px;
-    margin: 0px 60px 0px 60px;
+    margin: 0px 20px 0px 20px;
     color: rgb(145, 124, 69);
     font-family:serif;
   }
-
   .header-nav a:hover{
     text-decoration: underline; 
   }
@@ -44,7 +41,6 @@
     justify-content: space-between;
     list-style-type: none;
   }
-
   a{
     text-decoration: none;
     color:white;
@@ -54,7 +50,6 @@
   a:hover{
     color: gray;
   }
-
   h2{
     margin-top: 70px;
     margin-bottom: 40px;
@@ -62,153 +57,71 @@
     color:white;
     text-shadow: 4px 4px 4px #aaa
   }
-
   h2, h3{
     font-family: Arial, sans-serif;
     text-align: center;
   }
-
-  .performance-image{
-    width: 350px;
-    height: 450px;
-    transition: transform .25s .15s;
-  }
-
-  .performance-image:hover{
-    transform: scale(0.9) rotateY(35deg)
-  }
-
-  .shorttext{
-    font-family: Arial, sans-serif;
-    color: #999;
-    margin: 0% 5% 0% 5%;
-    width: 350px;
-    font-size: 20px;
-    text-align: center;
-    perspective: 4000px
-  }
-  
-  .shorttext p {
-    margin-bottom: 0px;
-  }
-  .about-text{
-    font-family: Arial, sans-serif;
-    color: #999;
-    font-size: 20px;
-    text-align: center;
-    margin: 0% 15% 1.5em 15%;
-  }
-
-  .about-image{
-    animation: slideDown 7s;
-    animation-iteration-count: infinite;
-    width: 195px;
-    height: 250px;
-  }
-
-  section .about-image{
-    display:block;
-    margin:auto;
-  }
-
-  blockquote{
-    font-size: 40px;
-    color:white;
-    position: relative;
-  }
-
-  .citation{
-    font-family: serif;
-    color: rgb(145, 124, 69);
-    font-size: 25px;
-    text-align: center;
-    margin: 4% 25% 4% 25%;
-  }
-
-  blockquote::before{
-    content: '“';
-    position: absolute;
-    left: 20px;
-    bottom:15px;
-    font-size: 60px;
-    line-height: 1.4rem;
-  }
-
-  blockquote::after{
-    content:'„';
-    position: absolute;
-    bottom: 0px;
-    right: 20px;
-    font-size: 60px;
-    line-height: 1.4rem;
-  }
-  
-  .blockquote-author{
-    color:rgb(145, 124, 69);
-    font-family: serif;
-    font-size: 20px;
-    margin-left: 70%;
-  }
-
-  table{
-    margin: auto;
-    margin-bottom: 25px;
-  }
-
-  table{
-    border: 1px solid #333;
-  }
-
-  .table-content{
-    margin: auto;
-  }
-
-  td, th{
-    font-size: 20px;
-    padding: 5px 10px;  
-  }
-
-  th{
-    background-color:white; 
-    color: black; 
-  }
-
-
-  label{
-    font-family: Arial, sans-serif;
-    color: white;
-    font-size: 20px;
-    margin-right: 1%;
-  } 
-
   input#messageinput{
     width: 500px;
     height: 200px;
   }
-
   form{
     color: white;
     text-align: center;
   }
-
   .labelblock{
     margin-top: 1%;
     margin-bottom: 1%;
   }
-
   footer{
     font-family: Arial, sans-serif;
     color: rgb(145, 124, 69);
     font-size: 20px;
     text-align: center;
   }
-
   .legal{
       font-size: 15px;
   }
-
   a.footer-link:hover{
     text-decoration: underline;
   }  
-
-    
+  .container{
+    margin: 0px 150px 0px 150px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    max-width: 900px;
+    flex-wrap: wrap;
+  }
+  .card {
+    max-width: 300px;
+    padding: 15px 30px 15px 30px;
+    position: relative;
+    float: left;
+    font-family: arial;
+    text-align: center;
+  }
+  .card>* {
+    flex: 0 0 33.3333%;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color:darkgray;
+    background-color:gray;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }

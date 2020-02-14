@@ -3,7 +3,18 @@
 @Section['Content']
 
 <div>
-        <h2 id="Best Seller">Best Seller</h2>
+        <h2 id="Choose">Make your choice</h2>
+        @Each
+            <div class="card">
+                <img src=@Current.Photo alt="Elderly photo" style="width:100%">
+                <h1>@Current.Name</h1>
+                <p class="price">$ @Current.Price</p>
+                <p>@Current.Description</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+        @EndEach
+
+        <!--
         <table>
             <thead>
                 <tr>
@@ -35,7 +46,7 @@
                 </tr>
             </tbody>
         @EndEach
-        </table>
+        </table> -->
     </div>
 
 @EndSection

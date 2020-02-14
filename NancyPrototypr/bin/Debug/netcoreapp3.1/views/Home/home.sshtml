@@ -19,6 +19,20 @@
     </div>
     <div>
         <h2 id="Best Seller">Best Seller</h2>
+
+        <div class="container">
+            @Each
+            <div class="card">
+                <img src=@Current.Photo alt="Elderly photo" style="width:100%">
+                <h1>@Current.Name</h1>
+                <p class="price">$ @Current.Price</p>
+                <p>@Current.Description</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            @EndEach
+        </div>
+
+        <!--
         <table>
             <thead>
                 <tr>
@@ -39,9 +53,6 @@
                         @Current.Price
                     </td>
                     <td>
-                        @Current.Category.Name
-                    </td>
-                    <td>
                         @Current.Name
                     </td>
                     <td>
@@ -50,6 +61,6 @@
                 </tr>
             </tbody>
         @EndEach
-        </table>
+        </table> -->
     </div>
   @EndSection

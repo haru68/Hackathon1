@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Hackathon1\\NancyPrototypr\\NancyPrototype.csproj": {}
+    "C:\\Users\\Sartori\\Documents\\WCS\\Hackathon\\Hackathon1\\Hackathon-CSharp\\NancyPrototypr\\NancyPrototype.csproj": {}
   },
   "projects": {
-    "E:\\Hackathon1\\NancyPrototypr\\NancyPrototype.csproj": {
+    "C:\\Users\\Sartori\\Documents\\WCS\\Hackathon\\Hackathon1\\Hackathon-CSharp\\NancyPrototypr\\NancyPrototype.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Hackathon1\\NancyPrototypr\\NancyPrototype.csproj",
+        "projectUniqueName": "C:\\Users\\Sartori\\Documents\\WCS\\Hackathon\\Hackathon1\\Hackathon-CSharp\\NancyPrototypr\\NancyPrototype.csproj",
         "projectName": "EcoConception",
-        "projectPath": "E:\\Hackathon1\\NancyPrototypr\\NancyPrototype.csproj",
-        "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-        "outputPath": "E:\\Hackathon1\\NancyPrototypr\\obj\\",
+        "projectPath": "C:\\Users\\Sartori\\Documents\\WCS\\Hackathon\\Hackathon1\\Hackathon-CSharp\\NancyPrototypr\\NancyPrototype.csproj",
+        "packagesPath": "C:\\Users\\Sartori\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sartori\\Documents\\WCS\\Hackathon\\Hackathon1\\Hackathon-CSharp\\NancyPrototypr\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Sartori\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -70,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

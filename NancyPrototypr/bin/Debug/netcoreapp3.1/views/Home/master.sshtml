@@ -14,20 +14,24 @@
       <nav class="header-nav">
         <ul>
           <li>
-            <a href="#Concept">Concept</a>
+            <a href="/#Concept">Concept</a>
           </li>
           <li>
-            <a href="#Best Seller">Best Seller</a>
+            <a href="/#Best Seller">Best Seller</a>
           </li>
           <li>
-            <a href="#Get Your Elderly">Get Your Elderly</a>
+            <a href="/Categories">Get Your Elderly</a>
           </li>
           <li>
-            <a href="#Your Cart">Your Cart</a>
+            <a href="/sort_male">Our Males</a>
+          </li>
+          <li>
+            <a href="/sort_Female">Our Females</a>
           </li>
         </ul>
       </nav>
     </header>
+
 
  @Section['Content']
 

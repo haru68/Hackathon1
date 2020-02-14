@@ -8,6 +8,28 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="views\Home\categories.sshtml" />
+    <None Remove="views\Home\choice.sshtml" />
+    <None Remove="views\Home\home.sshtml" />
+    <None Remove="views\Home\master.sshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="views\Home\categories.sshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Home\choice.sshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Home\home.sshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Home\master.sshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Nancy" Version="2.0.0" />
     <PackageReference Include="Nancy.Hosting.Self" Version="2.0.0" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />

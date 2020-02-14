@@ -1,32 +1,14 @@
 @Master['master']
-
 @Section['Content']
-    
-    <div>
-        <h2 id="Best Seller">Categories</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                </tr>
-            </thead>
-        @Each
-            <tbody>
-                <tr>
-                    <td>
-                        @Current.Id
-                    </td>
-                    <td>
-                        @Current.Name
-                    </td>
-                    <td>
-                        @Current.Description
-                    </td>
-                </tr>
-            </tbody>
-        @EndEach
-        </table>
-    </div>
+    <div class="container">
+            @Each
+            <div class="card">
+                <img src=@Current.Photo alt="Elderly photo" style="width:100%">
+                <h1>@Current.Name</h1>
+                <p class="price">$ @Current.Price</p>
+                <p>@Current.Description</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            @EndEach
+        </div>
   @EndSection

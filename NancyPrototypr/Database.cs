@@ -59,9 +59,10 @@ namespace EcoConception
             int id = randomGenerator.Next(1, 21);
             int id2 = randomGenerator.Next(1, 21);
             int id3 = randomGenerator.Next(1, 21);
+            int id4 = randomGenerator.Next(1, 21);
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = Connection;
-            cmd.CommandText = $"SELECT photo_path, \"name\", price, \"description\" FROM Products WHERE id = {id} OR id = {id2} OR id = {id3}";
+            cmd.CommandText = $"SELECT photo_path, \"name\", price, \"description\" FROM Products WHERE id = {id} OR id = {id2} OR id = {id3} OR id = {id4};";
             List<Product> products = new List<Product>();
             using (SqlDataReader reader = cmd.ExecuteReader())
             {
@@ -96,7 +97,6 @@ namespace EcoConception
                         product.Price = reader.GetDecimal(reader.GetOrdinal("price"));
                         product.Name = reader.GetString(reader.GetOrdinal("name"));
                         product.Description = reader.GetString(reader.GetOrdinal("description"));
-                        product.isFemale = reader.GetBoolean(reader.GetOrdinal("isFemale"));
                         product.hasOxygenBottle = reader.GetBoolean(reader.GetOrdinal("hasTeeth"));
                         product.isIncontinent = reader.GetBoolean(reader.GetOrdinal("isIncontinent"));
                         product.isHandicaped = reader.GetBoolean(reader.GetOrdinal("isHandicaped"));
@@ -110,8 +110,7 @@ namespace EcoConception
             return products;
         }
 
-
-
+        
         public List<Category> GetAllCategories()
         {
             SqlCommand cmd = new SqlCommand();
