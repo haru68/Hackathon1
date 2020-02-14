@@ -162,7 +162,7 @@ namespace EcoConception
         {
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = Connection;
-            cmd.CommandText = $"SELECT \"name\", id, price, \"description\" FROM Products WHERE category = {category_id}";
+            cmd.CommandText = $"SELECT \"name\", id, price, \"description\", photo_path FROM Products WHERE category = {category_id}";
             List<Product> products = new List<Product>();
             using (SqlDataReader reader = cmd.ExecuteReader())
             {
@@ -175,6 +175,7 @@ namespace EcoConception
                         product.Name = reader.GetString(reader.GetOrdinal("name"));
                         product.Description = reader.GetString(reader.GetOrdinal("description"));
                         product.Id = reader.GetInt32(reader.GetOrdinal("id"));
+                        product.Photo = reader.GetString(reader.GetOrdinal("photo_path"));
                         products.Add(product);
                     }
                 }
@@ -199,6 +200,7 @@ namespace EcoConception
                         product.Name = reader.GetString(reader.GetOrdinal("name"));
                         product.Description = reader.GetString(reader.GetOrdinal("description"));
                         product.Id = reader.GetInt32(reader.GetOrdinal("id"));
+                        product.Photo = reader.GetString(reader.GetOrdinal("photo_path"));
                         products.Add(product);
                     }
                 }
@@ -223,6 +225,7 @@ namespace EcoConception
                         product.Name = reader.GetString(reader.GetOrdinal("name"));
                         product.Description = reader.GetString(reader.GetOrdinal("description"));
                         product.Id = reader.GetInt32(reader.GetOrdinal("id"));
+                        product.Photo = reader.GetString(reader.GetOrdinal("photo_path"));
                         products.Add(product);
                     }
                 }
@@ -247,6 +250,7 @@ namespace EcoConception
                         product.Name = reader.GetString(reader.GetOrdinal("name"));
                         product.Description = reader.GetString(reader.GetOrdinal("description"));
                         product.Id = reader.GetInt32(reader.GetOrdinal("id"));
+                        product.Photo = reader.GetString(reader.GetOrdinal("photo_path"));
                         products.Add(product);
                     }
                 }
@@ -271,6 +275,7 @@ namespace EcoConception
                         product.Name = reader.GetString(reader.GetOrdinal("name"));
                         product.Description = reader.GetString(reader.GetOrdinal("description"));
                         product.Id = reader.GetInt32(reader.GetOrdinal("id"));
+                        product.Photo = reader.GetString(reader.GetOrdinal("photo_path"));
                         products.Add(product);
                     }
                 }
