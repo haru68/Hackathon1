@@ -75,7 +75,7 @@ namespace EcoConception
                         product.isHandicaped = reader.GetBoolean(reader.GetOrdinal("isHandicaped"));
                         product.Id = reader.GetInt32(reader.GetOrdinal("id"));
                         product.age = reader.GetInt32(reader.GetOrdinal("age"));
-                        
+
                         products.Add(product);
                     }
                 }
@@ -84,6 +84,8 @@ namespace EcoConception
 
         }
 
+
+        /*
         public List<Category> GetAllCategories()
         {
             SqlCommand cmd = new SqlCommand();
@@ -107,12 +109,62 @@ namespace EcoConception
             return categories;
         }
 
+        
+
+        public int GetCategoryId(string category)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = Connection;
+            cmd.CommandText = $"SELECT id FROM Categories WHERE \"name\" = '{category}'";
+            int id = 1;
+
+            using (SqlDataReader reader = cmd.ExecuteReader())
+            {
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+
+                        id = reader.GetInt32(reader.GetOrdinal("id"));
+                    }
+
+
+                }
+            }
+            return id;
+        }
+
+
+
+        public List<Product> GetProductByCategory(int category_id)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = Connection;
+            cmd.CommandText = $"SELECT \"name\", id, price, \"description\" FROM Products WHERE category = {category_id}";
+            using (SqlDataReader reader = cmd.ExecuteReader())
+            {
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+
+                        product.Id = reader.GetInt32(reader.GetOrdinal("id"));
+                    }
+
+
+                }
+            }
+            return;
+        }
+        */
+
         public List<Product> GetProductsOfCat1()
         {
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = Connection;
             cmd.CommandText = "SELECT [price], [name], [description], [photo] FROM Products WHERE [category]=1";
             List<Product> products = new List<Product>();
+
             using (SqlDataReader reader = cmd.ExecuteReader())
             {
                 if (reader.HasRows)
@@ -131,6 +183,7 @@ namespace EcoConception
             return products;
 
         }
+
 
         public List<Product> GetProductsOfCat2()
         {
@@ -157,6 +210,7 @@ namespace EcoConception
 
         }
 
+
         public List<Product> FilterProductHasTeeth()
         {
             SqlCommand cmd = new SqlCommand();
@@ -173,6 +227,7 @@ namespace EcoConception
                         product.Price = reader.GetDecimal(reader.GetOrdinal("price"));
                         product.Name = reader.GetString(reader.GetOrdinal("name"));
                         product.Description = reader.GetString(reader.GetOrdinal("description"));
+
 
                         products.Add(product);
                     }
@@ -281,4 +336,7 @@ namespace EcoConception
             return products;
 
         }
+
+        
     }
+}
