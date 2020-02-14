@@ -10,6 +10,7 @@ namespace EcoConception
         public Decimal Price { get; set; }
         public String Name { get; set; }
         public String Description { get; set; }
+        public String Photo { get; set; }
         public bool isFemale { get; set; }
         public bool hasTeeth { get; set; }
         public int age { get; set; }
@@ -17,6 +18,7 @@ namespace EcoConception
         public bool isIncontinent { get; set; }
         public bool isHandicaped { get; set; }
         public Category Category { get; set; }
+
 
 
     }
