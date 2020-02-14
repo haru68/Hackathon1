@@ -17,7 +17,7 @@ hasOxygenBottle BIT NOT NULL,
 isIncontinent BIT NOT NULL,
 isHandicaped BIT,
 category INT,
-photo VARBINARY,
+photo_path VARCHAR(250) ,
 FOREIGN KEY (category) REFERENCES Categories(id)
 );
 
@@ -52,6 +52,26 @@ VALUES
 UPDATE Products SET category = 1 WHERE id > 10;
 UPDATE Products SET category = 2 WHERE id < 11;
 
+UPDATE Products SET photo_path = 'E:\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Gerard.png' WHERE "name" = 'Gerard';
+UPDATE Products SET photo_path = 'E:\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Oscar.png' WHERE "name" = 'Oscar';
+UPDATE Products SET photo_path = 'E:\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Anton.png' WHERE "name" = 'Anton';
+UPDATE Products SET photo_path = 'E:\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Li.png' WHERE "name" = 'Li';
+UPDATE Products SET photo_path = 'E:\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Robert.png' WHERE "name" = 'Robert';
+UPDATE Products SET photo_path = 'E:\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Bakir.png' WHERE "name" = 'Bakir';
+UPDATE Products SET photo_path = 'E:\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Rati.png' WHERE "name" = 'Rati';
+UPDATE Products SET photo_path = 'E:\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Henri.png' WHERE "name" = 'Henri';
+UPDATE Products SET photo_path = 'E:\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Fernand.png' WHERE "name" = 'Fernand';
+UPDATE Products SET photo_path = 'E:\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Bradley.png' WHERE "name" = 'Bradley';
+UPDATE Products SET photo_path = 'E:\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Georgette.png' WHERE "name" = 'Georgette';
+UPDATE Products SET photo_path = 'E:\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Su-Wei.png' WHERE "name" = 'Su-Wei';
+UPDATE Products SET photo_path = 'E:\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Rosa.png' WHERE "name" = 'Rosa';
+UPDATE Products SET photo_path = 'E:\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Aida.png' WHERE "name" = 'Aida';
+UPDATE Products SET photo_path = 'E:\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Gloria.png' WHERE "name" = 'Gloria';
+UPDATE Products SET photo_path = 'E:\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Denise.png' WHERE "name" = 'Denise';
+UPDATE Products SET photo_path = 'E:\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Paule.png' WHERE "name" = 'Paule';
+UPDATE Products SET photo_path = 'E:\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Juliette.png' WHERE "name" = 'Juliette';
+UPDATE Products SET photo_path = 'E:\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Maylee.png' WHERE "name" = 'Maylee';
+UPDATE Products SET photo_path = 'E:\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Mona.png' WHERE "name" = 'Mona';
 
 SELECT * FROM Products;
 SELECT * FROM Categories;
