@@ -65,7 +65,11 @@ namespace EcoConception
         {
             Get("/", ServeHome);
             Get("/Categories", ServeCategories);
-            Get("/tri", ServeProductFromCategory);
+            Get("/tri_{category}", parameters =>  ServeProductFromCategory(parameters.category));
+            Get("/choice_{boolean}", parameters => ServeProductFromHasTeeth(parameters.boolean));
+            Get("/choice_{boolean}", parameters => ServeProductFromHasOxygen(parameters.boolean));
+            Get("/choice_{boolean}", parameters => ServeProductFromIsIncontinent(parameters.boolean));
+            Get("/choice_{boolean}", parameters => ServeProductFromIsHandicaped(parameters.boolean));
         }
 
         private dynamic ServeHome(object manyParameters)
@@ -75,12 +79,33 @@ namespace EcoConception
 
         private dynamic ServeCategories(object manyParameters)
         {
-            return View["home.sshtml", Categories];
+            return View["categories.sshtml", Categories];
         }
 
-        private dynamic ServeProductFromCategory(object manyParameters)
+        private dynamic ServeProductFromCategory(string manyParameters)
         {
-            return View["home.sshtml", ProductFromCategory("Sexually active")];
+            return View["home.sshtml", ProductFromCategory(manyParameters)];
         }
+
+        private dynamic ServeProductFromHasTeeth(int manyParameters)
+        {
+            return View["choice.sshtml", Database.GetProductFromCharacteristicHasTeeth(manyParameters)];
+        }
+
+        private dynamic ServeProductFromHasOxygen(int manyParameters)
+        {
+            return View["choice.sshtml", Database.GetProductFromCharacteristicHasOxygen(manyParameters)];
+        }
+
+        private dynamic ServeProductFromIsIncontinent(int manyParameters)
+        {
+            return View["choice.sshtml", Database.GetProductFromCharacteristicIsIncontinent(manyParameters)];
+        }
+
+        private dynamic ServeProductFromIsHandicaped(int manyParameters)
+        {
+            return View["choice.sshtml", Database.GetProductFromCharacteristicIsHandicaped(manyParameters)];
+        }
+
     }
 }

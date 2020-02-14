@@ -157,5 +157,101 @@ namespace EcoConception
 
         }
 
+        public List<Product> GetProductFromCharacteristicHasTeeth(int boolean)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = Connection;
+            cmd.CommandText = $"SELECT \"name\", id, price, \"description\", photo FROM Products WHERE hasTeeth = {boolean}";
+            List<Product> products = new List<Product>();
+            using (SqlDataReader reader = cmd.ExecuteReader())
+            {
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        Product product = new Product();
+                        product.Price = reader.GetDecimal(reader.GetOrdinal("price"));
+                        product.Name = reader.GetString(reader.GetOrdinal("name"));
+                        product.Description = reader.GetString(reader.GetOrdinal("description"));
+                        product.Id = reader.GetInt32(reader.GetOrdinal("id"));
+                        products.Add(product);
+                    }
+                }
+            }
+            return products;
+        }
+
+        public List<Product> GetProductFromCharacteristicHasOxygen(int boolean)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = Connection;
+            cmd.CommandText = $"SELECT \"name\", id, price, \"description\", photo FROM Products WHERE hasOxygenBottle = {boolean}";
+            List<Product> products = new List<Product>();
+            using (SqlDataReader reader = cmd.ExecuteReader())
+            {
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        Product product = new Product();
+                        product.Price = reader.GetDecimal(reader.GetOrdinal("price"));
+                        product.Name = reader.GetString(reader.GetOrdinal("name"));
+                        product.Description = reader.GetString(reader.GetOrdinal("description"));
+                        product.Id = reader.GetInt32(reader.GetOrdinal("id"));
+                        products.Add(product);
+                    }
+                }
+            }
+            return products;
+        }
+
+        public List<Product> GetProductFromCharacteristicIsIncontinent(int boolean)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = Connection;
+            cmd.CommandText = $"SELECT \"name\", id, price, \"description\", photo FROM Products WHERE isIncontinent = {boolean}";
+            List<Product> products = new List<Product>();
+            using (SqlDataReader reader = cmd.ExecuteReader())
+            {
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        Product product = new Product();
+                        product.Price = reader.GetDecimal(reader.GetOrdinal("price"));
+                        product.Name = reader.GetString(reader.GetOrdinal("name"));
+                        product.Description = reader.GetString(reader.GetOrdinal("description"));
+                        product.Id = reader.GetInt32(reader.GetOrdinal("id"));
+                        products.Add(product);
+                    }
+                }
+            }
+            return products;
+        }
+
+        public List<Product> GetProductFromCharacteristicIsHandicaped(int boolean)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = Connection;
+            cmd.CommandText = $"SELECT \"name\", id, price, \"description\", photo FROM Products WHERE isHandicaped = {boolean}";
+            List<Product> products = new List<Product>();
+            using (SqlDataReader reader = cmd.ExecuteReader())
+            {
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        Product product = new Product();
+                        product.Price = reader.GetDecimal(reader.GetOrdinal("price"));
+                        product.Name = reader.GetString(reader.GetOrdinal("name"));
+                        product.Description = reader.GetString(reader.GetOrdinal("description"));
+                        product.Id = reader.GetInt32(reader.GetOrdinal("id"));
+                        products.Add(product);
+                    }
+                }
+            }
+            return products;
+        }
+
     }
 }
