@@ -17,7 +17,6 @@ namespace EcoConception
         public bool hasOxygenBottle { get; set; }
         public bool isIncontinent { get; set; }
         public bool isHandicaped { get; set; }
-        public string Photo { get; set; }
         public Category Category { get; set; }
 
 

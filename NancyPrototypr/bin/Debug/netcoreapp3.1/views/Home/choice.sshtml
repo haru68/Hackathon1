@@ -6,7 +6,7 @@
         <h2 id="Choose">Make your choice</h2>
         @Each
             <div class="card">
-                <img src=@Current.Photo alt="Elderly photo" style="width:100%">
+                @Current.Photo
                 <h1>@Current.Name</h1>
                 <p class="price">$ @Current.Price</p>
                 <p>@Current.Description</p>
@@ -41,12 +41,12 @@
                         @Current.Id
                     </td>
 		     <td>
-                       	@Current.Photo
+                        @Current.photo_path
                     </td>
                 </tr>
             </tbody>
         @EndEach
-        </table> -->
+        </table>
     </div>
 
 @EndSection

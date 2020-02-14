@@ -1,7 +1,5 @@
-﻿using System;
+﻿using Nancy;
 using System.Collections.Generic;
-using System.Text;
-using Nancy;
 using System.Data.SqlClient;
 
 namespace EcoConception

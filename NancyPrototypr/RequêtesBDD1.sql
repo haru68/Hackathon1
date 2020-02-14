@@ -52,10 +52,10 @@ VALUES
 UPDATE Products SET category = 1 WHERE id > 10;
 UPDATE Products SET category = 2 WHERE id < 11;
 
-UPDATE Products SET photo_path = '<img src="E:\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Gerard.png" alt="Gerard">' WHERE "name" = 'Gerard';
-UPDATE Products SET photo_path = '<img src="E:\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Oscar.png" alt="Oscar">' WHERE "name" = 'Oscar';
-UPDATE Products SET photo_path = '<img src="E:\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Anton.png" alt="Anton">' WHERE "name" = 'Anton';
-UPDATE Products SET photo_path = '<img src="E:\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Li.png" alt="Li">' WHERE "name" = 'Li';
+UPDATE Products SET photo_path = '<img src="/bin/Debug/netcoreapp3.1/content/Gerard.png" alt="Gerard">' WHERE "name" = 'Gerard';
+UPDATE Products SET photo_path = '<img src="C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Oscar.png" alt="Oscar">' WHERE "name" = 'Oscar';
+UPDATE Products SET photo_path = '<img src="C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Anton.png" alt="Anton">' WHERE "name" = 'Anton';
+UPDATE Products SET photo_path = '<img src="C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Li.png" alt="Li">' WHERE "name" = 'Li';
 UPDATE Products SET photo_path = '<img src="E:\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Robert.png" alt="Robert">' WHERE "name" = 'Robert';
 UPDATE Products SET photo_path = '<img src="E:\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Bakir.png" alt="Bakir">' WHERE "name" = 'Bakir';
 UPDATE Products SET photo_path = '<img src="E:\Hackathon1\NancyPrototypr\bin\Debug\netcoreapp3.1\content\Rati.png" alt="Rati">' WHERE "name" = 'Rati';
