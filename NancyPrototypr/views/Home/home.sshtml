@@ -14,7 +14,7 @@
         <nav class="header-nav">
             <ul>
                 <li><a href="#Concept">Concept</a></li>
-                <li><a href="#Funniest Elderly">Funniest Elderly</a></li>
+                <li><a href="#Best Seller">Best Seller</a></li>
                 <li><a href="#Get Your Elderly">Get Your Elderly</a></li>
                 <li><a href="#Your Cart">Your Cart</a></li>
             </ul>
@@ -36,12 +36,13 @@
         </div>
     </div>
     <div>
-        <h2 id="Funniest Elderly">Funniest Elderly</h2>
+        <h2 id="Best Seller">Best Seller</h2>
         <table>
             <thead>
                 <tr>
                     <th>Photo</th>
                     <th>Price</th>
+                    <th>Category</th>
                     <th>Name</th>
                     <th>Description</th>
                 </tr>
@@ -54,6 +55,9 @@
                     </td>
                     <td>
                         @Current.Price
+                    </td>
+                    <td>
+                        @Current.Category.Name
                     </td>
                     <td>
                         @Current.Name

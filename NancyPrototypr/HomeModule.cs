@@ -29,7 +29,7 @@ namespace EcoConception
                 products.Add(new Product { Name = "Gérard", Price = 30000, Category = manCategory, Description = "Old handsome boy" });
                 */
 
-                return Database.GetAllProducts();
+                return Database.GetRandomProducts();
             }
         }
 
