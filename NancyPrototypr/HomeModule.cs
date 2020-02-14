@@ -66,10 +66,10 @@ namespace EcoConception
             Get("/", ServeHome);
             Get("/Categories", ServeCategories);
             Get("/tri_{category}", parameters =>  ServeProductFromCategory(parameters.category));
-            Get("/choice_{boolean}", parameters => ServeProductFromHasTeeth(parameters.boolean));
-            Get("/choice_{boolean}", parameters => ServeProductFromHasOxygen(parameters.boolean));
-            Get("/choice_{boolean}", parameters => ServeProductFromIsIncontinent(parameters.boolean));
-            Get("/choice_{boolean}", parameters => ServeProductFromIsHandicaped(parameters.boolean));
+            Get("/choice_teeth_{boolean}", parameters => ServeProductFromHasTeeth(parameters.boolean));
+            Get("/choice_oxygen_{boolean}", parameters => ServeProductFromHasOxygen(parameters.boolean));
+            Get("/choice_incontinent_{boolean}", parameters => ServeProductFromIsIncontinent(parameters.boolean));
+            Get("/choice_handicaped_{boolean}", parameters => ServeProductFromIsHandicaped(parameters.boolean));
         }
 
         private dynamic ServeHome(object manyParameters)
