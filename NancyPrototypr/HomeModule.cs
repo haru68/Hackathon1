@@ -65,7 +65,7 @@ namespace EcoConception
         {
             Get("/", ServeHome);
             Get("/Categories", ServeCategories);
-            Get("/tri_{category}", parameters =>  ServeProductFromCategory(parameters.category));
+            Get("/sort_{category}", parameters =>  ServeProductFromCategory(parameters.category));
             Get("/choice_teeth_{boolean}", parameters => ServeProductFromHasTeeth(parameters.boolean));
             Get("/choice_oxygen_{boolean}", parameters => ServeProductFromHasOxygen(parameters.boolean));
             Get("/choice_incontinent_{boolean}", parameters => ServeProductFromIsIncontinent(parameters.boolean));
@@ -84,7 +84,7 @@ namespace EcoConception
 
         private dynamic ServeProductFromCategory(string manyParameters)
         {
-            return View["home.sshtml", ProductFromCategory(manyParameters)];
+            return View["choice.sshtml", ProductFromCategory(manyParameters)];
         }
 
         private dynamic ServeProductFromHasTeeth(int manyParameters)
