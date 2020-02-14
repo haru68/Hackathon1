@@ -156,5 +156,129 @@ namespace EcoConception
             return products;
 
         }
+
+        public List<Product> FilterProductHasTeeth()
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = Connection;
+            cmd.CommandText = "SELECT [price], [name], [description], [photo] FROM Products WHERE [hasTeeth]=1";
+            List<Product> products = new List<Product>();
+            using (SqlDataReader reader = cmd.ExecuteReader())
+            {
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        Product product = new Product();
+                        product.Price = reader.GetDecimal(reader.GetOrdinal("price"));
+                        product.Name = reader.GetString(reader.GetOrdinal("name"));
+                        product.Description = reader.GetString(reader.GetOrdinal("description"));
+
+                        products.Add(product);
+                    }
+                }
+            }
+            return products;
+
+        }
+
+        public List<Product> FilterProductHasOxygenBottle()
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = Connection;
+            cmd.CommandText = "SELECT [price], [name], [description], [photo] FROM Products WHERE [hasOxygenBottle]=1";
+            List<Product> products = new List<Product>();
+            using (SqlDataReader reader = cmd.ExecuteReader())
+            {
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        Product product = new Product();
+                        product.Price = reader.GetDecimal(reader.GetOrdinal("price"));
+                        product.Name = reader.GetString(reader.GetOrdinal("name"));
+                        product.Description = reader.GetString(reader.GetOrdinal("description"));
+
+                        products.Add(product);
+                    }
+                }
+            }
+            return products;
+
+        }
+
+        public List<Product> FilterProductIsIncontinent()
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = Connection;
+            cmd.CommandText = "SELECT [price], [name], [description], [photo] FROM Products WHERE [isIncontinent]=1";
+            List<Product> products = new List<Product>();
+            using (SqlDataReader reader = cmd.ExecuteReader())
+            {
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        Product product = new Product();
+                        product.Price = reader.GetDecimal(reader.GetOrdinal("price"));
+                        product.Name = reader.GetString(reader.GetOrdinal("name"));
+                        product.Description = reader.GetString(reader.GetOrdinal("description"));
+
+                        products.Add(product);
+                    }
+                }
+            }
+            return products;
+
+        }
+
+        public List<Product> FilterProductIsHandicaped()
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = Connection;
+            cmd.CommandText = "SELECT [price], [name], [description], [photo] FROM Products WHERE [isHandicaped]=1";
+            List<Product> products = new List<Product>();
+            using (SqlDataReader reader = cmd.ExecuteReader())
+            {
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        Product product = new Product();
+                        product.Price = reader.GetDecimal(reader.GetOrdinal("price"));
+                        product.Name = reader.GetString(reader.GetOrdinal("name"));
+                        product.Description = reader.GetString(reader.GetOrdinal("description"));
+
+                        products.Add(product);
+                    }
+                }
+            }
+            return products;
+
+        }
+
+        public List<Product> FilterProductIsFemale()
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = Connection;
+            cmd.CommandText = "SELECT [price], [name], [description], [photo] FROM Products WHERE [isFemale]=1";
+            List<Product> products = new List<Product>();
+            using (SqlDataReader reader = cmd.ExecuteReader())
+            {
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        Product product = new Product();
+                        product.Price = reader.GetDecimal(reader.GetOrdinal("price"));
+                        product.Name = reader.GetString(reader.GetOrdinal("name"));
+                        product.Description = reader.GetString(reader.GetOrdinal("description"));
+
+                        products.Add(product);
+                    }
+                }
+            }
+            return products;
+
+        }
     }
-}
