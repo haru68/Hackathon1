@@ -2,4 +2,32 @@
 
 @Section['Content']
 
-@EndSection
+    
+    <div>
+        <h2 id="Best Seller">Categories</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+        @Each
+            <tbody>
+                <tr>
+                    <td>
+                        @Current.Id
+                    </td>
+                    <td>
+                        @Current.Name
+                    </td>
+                    <td>
+                        @Current.Description
+                    </td>
+                </tr>
+            </tbody>
+        @EndEach
+        </table>
+    </div>
+  @EndSection

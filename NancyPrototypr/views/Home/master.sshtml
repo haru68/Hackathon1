@@ -29,12 +29,8 @@
       </nav>
     </header>
 
-    <div>
-    @Section['Content'];
 
-
-    </div>
-
+ @Section['Content']
 
     <footer>
       <h2 id="Contact">Contact Us</h2>

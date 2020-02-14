@@ -2,6 +2,40 @@
 
 @Section['Content']
 
-
+<div>
+        <h2 id="Best Seller">Best Seller</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Price</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Id</th>
+		    <th>Photo</th>
+                </tr>
+            </thead>
+        @Each
+            <tbody>
+                <tr>
+                    <td>
+                        @Current.Price
+                    </td>
+                    <td>
+                        @Current.Name
+                    </td>
+                    <td>
+                        @Current.Description
+                    </td>
+                    <td>
+                        @Current.Id
+                    </td>
+		     <td>
+                        @Current.photo_path
+                    </td>
+                </tr>
+            </tbody>
+        @EndEach
+        </table>
+    </div>
 
 @EndSection

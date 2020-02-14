@@ -61,7 +61,7 @@ namespace EcoConception
             int id3 = randomGenerator.Next(1, 21);
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = Connection;
-            cmd.CommandText = $"SELECT photo, \"name\", price, \"description\" FROM Products WHERE id = {id} OR id = {id2} OR id = {id3}";
+            cmd.CommandText = $"SELECT photo_path, \"name\", price, \"description\" FROM Products WHERE id = {id} OR id = {id2} OR id = {id3}";
             List<Product> products = new List<Product>();
             using (SqlDataReader reader = cmd.ExecuteReader())
             {
@@ -185,7 +185,7 @@ namespace EcoConception
         {
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = Connection;
-            cmd.CommandText = $"SELECT \"name\", id, price, \"description\", photo FROM Products WHERE hasTeeth = {boolean}";
+            cmd.CommandText = $"SELECT \"name\", id, price, \"description\", photo_path FROM Products WHERE hasTeeth = {boolean}";
             List<Product> products = new List<Product>();
             using (SqlDataReader reader = cmd.ExecuteReader())
             {
@@ -209,7 +209,7 @@ namespace EcoConception
         {
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = Connection;
-            cmd.CommandText = $"SELECT \"name\", id, price, \"description\", photo FROM Products WHERE hasOxygenBottle = {boolean}";
+            cmd.CommandText = $"SELECT \"name\", id, price, \"description\", photo_path FROM Products WHERE hasOxygenBottle = {boolean}";
             List<Product> products = new List<Product>();
             using (SqlDataReader reader = cmd.ExecuteReader())
             {
@@ -233,7 +233,7 @@ namespace EcoConception
         {
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = Connection;
-            cmd.CommandText = $"SELECT \"name\", id, price, \"description\", photo FROM Products WHERE isIncontinent = {boolean}";
+            cmd.CommandText = $"SELECT \"name\", id, price, \"description\", photo_path FROM Products WHERE isIncontinent = {boolean}";
             List<Product> products = new List<Product>();
             using (SqlDataReader reader = cmd.ExecuteReader())
             {
@@ -257,7 +257,7 @@ namespace EcoConception
         {
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = Connection;
-            cmd.CommandText = $"SELECT \"name\", id, price, \"description\", photo FROM Products WHERE isHandicaped = {boolean}";
+            cmd.CommandText = $"SELECT \"name\", id, price, \"description\", photo_path FROM Products WHERE isHandicaped = {boolean}";
             List<Product> products = new List<Product>();
             using (SqlDataReader reader = cmd.ExecuteReader())
             {
