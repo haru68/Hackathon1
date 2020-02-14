@@ -1,3 +1,41 @@
+<<<<<<< HEAD
+﻿<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+    <h1>EcoConception</h1>
+    <p>Don't have any CSS, please write my body !</p>
+    <h2>Products</h2>
+    <table>
+        <tr>
+            <th>Prix</th>
+            <th>Catégorie</th>
+            <th>Nom</th>
+            <th>Description</th>
+        </tr>
+    @Each
+        <tr>
+            <td>
+                @Current.Price
+            </td>
+            <td>
+                @Current.Category.Name
+            </td>
+            <td>
+                @Current.Name
+            </td>
+            <td>
+                @Current.Description
+            </td>
+        </tr>
+    @EndEach
+    </table>
+=======
 ﻿<!DOCTYPE html>
 <html  lang="en">
 <head>
@@ -92,5 +130,6 @@
             <p>&copy; 2020 Adopt An Elderly -  All rights reserved - Made with ♥ by WildCodeSchoolDevGroups</p>
         </div>
       </footer>
+>>>>>>> master
 </body>
 </html>
