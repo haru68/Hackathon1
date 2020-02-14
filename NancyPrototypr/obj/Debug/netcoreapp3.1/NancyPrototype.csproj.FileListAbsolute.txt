@@ -8,7 +8,6 @@ C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyProtot
 C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
 C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
 C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\bin\Debug\netcoreapp3.1\Nancy.dll
-C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\bin\Debug\netcoreapp3.1\Nancy.Hosting.Self.dll
 C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
 C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
@@ -68,3 +67,8 @@ E:\Hackathon1\NancyPrototypr\obj\Debug\netcoreapp3.1\NancyPrototype.AssemblyInfo
 E:\Hackathon1\NancyPrototypr\obj\Debug\netcoreapp3.1\NancyPrototype.csproj.CopyComplete
 E:\Hackathon1\NancyPrototypr\obj\Debug\netcoreapp3.1\EcoConception.dll
 E:\Hackathon1\NancyPrototypr\obj\Debug\netcoreapp3.1\EcoConception.pdb
+C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\bin\Debug\netcoreapp3.1\Nancy.Hosting.Self.dll
+C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\bin\Debug\netcoreapp3.1\views\Home\categories.sshtml
+C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\bin\Debug\netcoreapp3.1\views\Home\choice.sshtml
+C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\bin\Debug\netcoreapp3.1\views\Home\home.sshtml
+C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\bin\Debug\netcoreapp3.1\views\Home\master.sshtml

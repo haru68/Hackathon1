@@ -110,8 +110,7 @@ namespace EcoConception
             return products;
         }
 
-
-
+        
         public List<Category> GetAllCategories()
         {
             SqlCommand cmd = new SqlCommand();

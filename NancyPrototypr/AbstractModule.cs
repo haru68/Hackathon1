@@ -19,11 +19,7 @@ namespace EcoConception
             //builder.InitialCatalog = "BDD";
             // builder.DataSource = "InstanceAddress";
             // builder.UserID = "UserOfTheDatabase";
-<<<<<<< HEAD
-            builder.ConnectionString = @"Data Source=LOCALHOST\SQLEXPRESS;Initial Catalog=Hackathon1;Integrated Security=True";
-=======
-            builder.ConnectionString = @"Data Source=AG\SQLEXPRESS;Initial Catalog=Hackathon1;Integrated Security=True";
->>>>>>> 8d5f6c50e80eed9495bd164571727d112ca58a2c
+            builder.ConnectionString = @"Data Source=PC-HARU\SQLEXPRESS;Initial Catalog=Hackathon1;Integrated Security=True";
             Database = new Database(builder);
             Database.OpenConnection();
         }

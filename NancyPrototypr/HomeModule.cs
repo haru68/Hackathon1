@@ -29,7 +29,7 @@ namespace EcoConception
                 products.Add(new Product { Name = "Gérard", Price = 30000, Category = manCategory, Description = "Old handsome boy" });
                 */
 
-                return Database.GetRandomProducts();
+                return Database.GetAllProducts();
             }
         }
 
@@ -74,12 +74,12 @@ namespace EcoConception
 
         private dynamic ServeHome(object manyParameters)
         {
-            return View["home.sshtml", Products];
+            return View["home.sshtml", Database.GetRandomProducts()];
         }
 
         private dynamic ServeCategories(object manyParameters)
         {
-            return View["categories.sshtml", Categories];
+            return View["categories.sshtml", Database.GetAllCategories()];
         }
 
         private dynamic ServeProductFromCategory(string manyParameters)
