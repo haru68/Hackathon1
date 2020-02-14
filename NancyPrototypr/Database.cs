@@ -53,6 +53,33 @@ namespace EcoConception
         }
 
 
+        public List<Product> GetRandomProducts()
+        {
+            Random randomGenerator = new Random();
+            int id = randomGenerator.Next(1, 21);
+            int id2 = randomGenerator.Next(1, 21);
+            int id3 = randomGenerator.Next(1, 21);
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = Connection;
+            cmd.CommandText = $"SELECT photo, \"name\", price, \"description\" FROM Products WHERE id = {id} OR id = {id2} OR id = {id3}";
+            List<Product> products = new List<Product>();
+            using (SqlDataReader reader = cmd.ExecuteReader())
+            {
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        Product product = new Product();
+                        product.Price = reader.GetDecimal(reader.GetOrdinal("price"));
+                        product.Name = reader.GetString(reader.GetOrdinal("name"));
+                        product.Description = reader.GetString(reader.GetOrdinal("description"));
+                        products.Add(product);
+                    }
+                }
+            }
+            return products;
+        }
+
         public List<Product> GetAllProducts()
         {
             SqlCommand cmd = new SqlCommand();
@@ -81,7 +108,6 @@ namespace EcoConception
                 }
             }
             return products;
-
         }
 
 
@@ -154,7 +180,6 @@ namespace EcoConception
                 }
             }
             return products;
-
         }
 
         public List<Product> GetProductFromCharacteristicHasTeeth(int boolean)
@@ -252,6 +277,5 @@ namespace EcoConception
             }
             return products;
         }
-
     }
 }
