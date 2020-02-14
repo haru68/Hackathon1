@@ -41,7 +41,7 @@
                         @Current.Id
                     </td>
 		     <td>
-                        @Current.photo_path
+                       	@Current.Photo
                     </td>
                 </tr>
             </tbody>
