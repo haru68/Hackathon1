@@ -79,7 +79,7 @@ namespace EcoConception
 
         private dynamic ServeCategories(object manyParameters)
         {
-            return View["categories.sshtml", Database.GetAllCategories()];
+            return View["categories.sshtml", Database.GetAllProducts()];
         }
 
         private dynamic ServeProductFromCategory(string manyParameters)

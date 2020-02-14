@@ -15,7 +15,6 @@ C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyProtot
 C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\obj\Debug\netcoreapp3.1\NancyPrototype.csprojAssemblyReference.cache
 C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\obj\Debug\netcoreapp3.1\NancyPrototype.AssemblyInfoInputs.cache
 C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\obj\Debug\netcoreapp3.1\NancyPrototype.AssemblyInfo.cs
 C:\Users\Sartori\Documents\WCS\Hackathon\Hackathon1\Hackathon-CSharp\NancyPrototypr\obj\Debug\netcoreapp3.1\NancyPrototype.csproj.CopyComplete
